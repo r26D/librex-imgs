@@ -15,12 +15,12 @@ absolute path to the soffice binary as the last parameter.
 Add this to your `mix.exs` file, then run `mix do deps.get, deps.compile`:
 
 ```elixir
-  {:librex, "~> 1.0"}
+  {:librex_imgs, "~> 1.0"}
 ```
 
 ## Examples
 ```elixir
-  import Librex
+  import LibrexImgs
 
   convert("/Users/ricn/files/example.docx", "/Users/ricn/files/example.pdf")
 
@@ -30,6 +30,7 @@ Add this to your `mix.exs` file, then run `mix do deps.get, deps.compile`:
 ```
 
 ## Credits
+Librex+imgs is a fork of [Librex](https://github.com/ricn/librex).
 
 The following people have contributed ideas, documentation, or code to Librex:
 
