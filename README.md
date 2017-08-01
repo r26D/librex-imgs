@@ -10,6 +10,9 @@ Elixir library to convert office documents to other formats using LibreOffice. T
 LibreOffice must be installed. It's recommended that you add the soffice binary your PATH. Otherwise you have to specify the
 absolute path to the soffice binary as the last parameter.
 
+If you need to install LibreOffice run this in your terminal:
+`sudo apt-get install libreoffice`
+
 ## Installation
 
 Add this to your `mix.exs` file, then run `mix do deps.get, deps.compile`:
