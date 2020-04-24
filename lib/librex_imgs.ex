@@ -1,31 +1,31 @@
 defmodule LibrexImgs do
   @moduledoc """
-  Provides functions to convert office documents, spreadsheets, presentations, and images to other formats.
+    Provides functions to convert office documents, spreadsheets, presentations, and images to other formats.
 
-  LibreOffice must be installed. It's recommended that you add the soffice binary your PATH. Otherwise you have to specify the
-  absolute path to the soffice binary as the last parameter.
+    LibreOffice must be installed. It's recommended that you add the soffice binary your PATH. Otherwise you have to specify the
+    absolute path to the soffice binary as the last parameter.
 
-   ## Examples
+     ## Examples
 
-      iex(1)> LibrexImgs.convert("test/fixtures/docx.docx", "/Users/ricn/docx.pdf")
+        iex(1)> LibrexImgs.convert("test/fixtures/docx.docx", "/Users/ricn/docx.pdf")
 
-      `{:ok, "/Users/ricn/docx.pdf"}`
+        `{:ok, "/Users/ricn/docx.pdf"}`
 
-      iex(2)> LibrexImgs.convert("non_existent_file", "/Users/ricn/docx.pdf")
+        iex(2)> LibrexImgs.convert("non_existent_file", "/Users/ricn/docx.pdf")
 
-      `{:error, :enoent}`
+        `{:error, :enoent}`
 
-      iex(3)> LibrexImgs.convert!("test/fixtures/docx.docx", "/Users/ricn/docx.pdf")
+        iex(3)> LibrexImgs.convert!("test/fixtures/docx.docx", "/Users/ricn/docx.pdf")
 
-      "/Users/ricn/docx.pdf"
+        "/Users/ricn/docx.pdf"
 
-      iex(4)> LibrexImgs.convert!("non_existent_file", "/Users/ricn/docx.pdf")
+        iex(4)> LibrexImgs.convert!("non_existent_file", "/Users/ricn/docx.pdf")
 
-      ** (File.Error) could not read non_existent_file: no such file or directory (librex) lib/librex.ex:13: LibrexImgs.convert!/3
+        ** (File.Error) could not read non_existent_file: no such file or directory (librex) lib/librex.ex:13: LibrexImgs.convert!/3
 
-      iex(5)> LibrexImgs.convert("test/fixtures/docx.docx", "/Users/ricn/docx.pdf", "/path_to/soffice")
+        iex(5)> LibrexImgs.convert("test/fixtures/docx.docx", "/Users/ricn/docx.pdf", "/path_to/soffice")
 
-      `{:ok, "/Users/ricn/docx.pdf"}`
+        `{:ok, "/Users/ricn/docx.pdf"}`
 
    """
 
